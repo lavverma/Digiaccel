@@ -1,0 +1,236 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #333;
+}
+.container{
+    background-color: #555;
+    color: #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    font-family: 'Montserrat', sans-serif;
+    max-width: 700px;
+}
+.container > p{
+    font-size: 32px;
+}
+.question{
+    width: 75%;
+}
+.options{
+    position: relative;
+    padding-left: 40px;
+}
+#options label{
+    display: block;
+    margin-bottom: 15px;
+    font-size: 14px;
+    cursor: pointer;
+}
+.options input{
+    opacity: 0;
+}
+.checkmark {
+    position: absolute;
+    top: -1px;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #555;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+}
+.options input:checked ~ .checkmark:after {
+    display: block;
+}
+.options .checkmark:after{
+    content: "";
+	width: 10px;
+    height: 10px;
+    display: block;
+	background: white;
+    position: absolute;
+    top: 50%;
+	left: 50%;
+    border-radius: 50%;
+    transform: translate(-50%,-50%) scale(0);
+    transition: 300ms ease-in-out 0s;
+}
+.options input[type="radio"]:checked ~ .checkmark{
+    background: #21bf73;
+    transition: 300ms ease-in-out 0s;
+}
+.options input[type="radio"]:checked ~ .checkmark:after{
+    transform: translate(-50%,-50%) scale(1);
+}
+.btn-primary{
+    background-color: #555;
+    color: #ddd;
+    border: 1px solid #ddd;
+}
+.btn-primary:hover{
+    background-color: #21bf73;
+    border: 1px solid #21bf73;
+}
+.btn-success{
+    padding: 5px 25px;
+    background-color: #21bf73;
+}
+@media(max-width:576px){
+    .question{
+        width: 100%;
+        word-spacing: 2px;
+    } 
+} */
+
+
+/* Dropdown Button */
+/* .dropbtn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  /* .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+   */
+  /* Dropdown Content (Hidden by Default) */
+  /* .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  } */
+  
+  /* Links inside the dropdown */
+  /* .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  } */
+  
+  /* Change color of dropdown links on hover */
+  /* .dropdown-content a:hover {background-color: #ddd;} */
+  
+  /* Show the dropdown menu on hover */
+  /* .dropdown:hover .dropdown-content {display: block;} */
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  /* .dropdown:hover .dropbtn {background-color: #3e8e41;} */ 
+
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+  *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  }
+  
+  body{
+      background-color: #333;
+  }
+  .container{
+      background-color: #555;
+      color: #ddd;
+      border-radius: 10px;
+      padding: 20px;
+      font-family: 'Montserrat', sans-serif;
+      max-width: 700px;
+  }
+  .container > p{
+      font-size: 32px;
+  }
+  .question{
+      width: 75%;
+  }
+  .options{
+      position: relative;
+      padding-left: 40px;
+  }
+  #options label{
+      display: block;
+      margin-bottom: 15px;
+      font-size: 14px;
+      cursor: pointer;
+  }
+  .options input{
+      opacity: 0;
+  }
+  .checkmark {
+      position: absolute;
+      top: -1px;
+      left: 0;
+      height: 25px;
+      width: 25px;
+      background-color: #555;
+      border: 1px solid #ddd;
+      border-radius: 50%;
+  }
+  .options input:checked ~ .checkmark:after {
+      display: block;
+  }
+  .options .checkmark:after{
+      content: "";
+      width: 10px;
+      height: 10px;
+      display: block;
+      background: white;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      border-radius: 50%;
+      transform: translate(-50%,-50%) scale(0);
+      transition: 300ms ease-in-out 0s;
+  }
+  .options input[type="radio"]:checked ~ .checkmark{
+      background: #21bf73;
+      transition: 300ms ease-in-out 0s;
+  }
+  .options input[type="radio"]:checked ~ .checkmark:after{
+      transform: translate(-50%,-50%) scale(1);
+  }
+  .btn-primary{
+      background-color: #555;
+      color: #ddd;
+      border: 1px solid #ddd;
+  }
+  .btn-primary:hover{
+      background-color: #21bf73;
+      border: 1px solid #21bf73;
+  }
+  .btn-success{
+      padding: 5px 25px;
+      background-color: #21bf73;
+  }
+  @media(max-width:576px){
+      .question{
+          width: 100%;
+          word-spacing: 2px;
+      } 
+  }
+
+  .button{
+    min-width: 40px;
+    height: fit-content;
+    background-color: aquamarine;
+    margin-right: 1rem;
+    padding: 0 0.5rem;
+  }
+
+  .button-clicked {
+    background: red;
+  }
