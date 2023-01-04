@@ -60,6 +60,10 @@ Start the server
   yarn run dev
 ```
 
+## Credential for Admin
+**email:** lavverma109@gmail.com
+**password:** Lavverm@109
+
 
 ##  Schema Diagram
 
