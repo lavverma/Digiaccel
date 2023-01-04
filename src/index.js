@@ -6,7 +6,7 @@ const cors = require("cors")
 const mongoose = require("mongoose")
 const app = express()
 
-const {PORT, DATA_BASE_CLUSTER_LINK, CLIENT_URL} = process.env
+const {PORT, DATA_BASE_CLUSTER_LINK} = process.env
 
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({extended : true}))
