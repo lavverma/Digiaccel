@@ -20,7 +20,7 @@ function App() {
       <Route path="/addAdmin/:adminId" element={<AddAdmin/>}/>
       <Route path="/addQuestions/:adminId/:quizId" element={<AddQuestions />}/>
       <Route path="/addParticipants/:adminId/:quizId" element={<AddParticipants />}/>
-      <Route path="/participantlogin/:quizId" element={<ParticipantLogin />}/>
+      <Route path="/participantLogin/:quizId" element={<ParticipantLogin />}/>
       <Route path="/quizPage/:quizId" element={<QuizPage />}/>
     </Routes>
     <Toaster/>
