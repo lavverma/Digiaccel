@@ -18,6 +18,8 @@ Clone the project
 ```
 For server run
 
+checkout branch server
+
 Go to the project directory
 
 ```bash
@@ -38,6 +40,8 @@ Start the server
 
 For Client run
 
+checkout branch master
+
 Go to the project directory
 
 ```bash
@@ -55,6 +59,10 @@ Start the server
 ```bash
   yarn run dev
 ```
+
+## Credential for Admin
+**email:** lavverma109@gmail.com
+**password:** Lavverm@109
 
 
 ##  Schema Diagram
