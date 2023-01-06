@@ -47,9 +47,6 @@ const AdminPanel = () => {
     }
 
 
-    const addAdmin = async () => {
-        navigate(`/addAdmin/${adminId}`)
-    }
 
 
 
@@ -66,10 +63,9 @@ const AdminPanel = () => {
   
 
     return (
-        <div className="vh-100" style={{ "background-color": "#55b4b0" }}>
+        <div className="vh-100 p-5" style={{ "background-color": "#55b4b0" }}>
             <h2 className='mb-5 text-center'>{`Welcome Back..${fname}`}</h2>
-            <button type="button" className="btn btn-primary btn-m m-5 float-end" onClick={(e) => addAdmin(e)}>Add New Admin</button>
-            {/* <button type="button" className="btn btn-primary btn-m m-5 float-end" onClick={(e) => addCandidate(e)}>Register Candidate</button> */}
+            
             <h2 >Create A New Quiz</h2>
             <div className="input-group mt-5 w-75">
                 <input type="text" className="form-control me-4 ms-4" placeholder="Quiz Name..." aria-label="Quiz Name..." aria-describedby="button-addon2" value={quizName} onChange={(e) => quiz(e)} />
